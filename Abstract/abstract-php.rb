@@ -9,7 +9,7 @@ class AbstractPhp < Formula
     skip_clean 'bin', 'sbin'
     depends_on 'curl'
     depends_on 'freetype'
-    depends_on 'tidy-html5'
+    #depends_on 'tidy-html5'
     depends_on 'homebrew/dupes/zlib'
     depends_on 'jpeg'
     depends_on 'libpng'
@@ -77,7 +77,7 @@ class AbstractPhp < Formula
             "--with-pdo-mysql=mysqlnd",
             "--with-png-dir=#{Formula['libpng'].opt_prefix}",
             "--with-readline=#{Formula['readline'].opt_prefix}",
-            "--with-tidy=#{Formula['tidy-html5'].opt_prefix}",
+            #"--with-tidy=#{Formula['tidy-html5'].opt_prefix}",
             "--with-xmlrpc",
             "--with-zlib=#{Formula['zlib'].opt_prefix}",
 
